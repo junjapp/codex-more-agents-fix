@@ -1,5 +1,10 @@
 # Codex More Agents Fix
 
+[![GitHub release](https://img.shields.io/github/v/release/junjapp/codex-more-agents-fix?display_name=tag)](https://github.com/junjapp/codex-more-agents-fix/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Platform: macOS](https://img.shields.io/badge/Platform-macOS-black)](#requirements)
+[![Language: English + 中文](https://img.shields.io/badge/Docs-English%20%2B%20%E4%B8%AD%E6%96%87-blue)](README.zh-CN.md)
+
 A safe, archive-only macOS utility that helps Codex create more agents again by cleaning up stale subagent threads.
 
 Chinese version: [README.zh-CN.md](README.zh-CN.md)
@@ -16,6 +21,14 @@ This tool is for users who want to:
 - reduce stale subagent buildup safely
 - preview changes before writing anything
 - avoid risky direct deletion of internal Codex rows
+
+## Quick Start
+
+1. Open the latest [Releases](https://github.com/junjapp/codex-more-agents-fix/releases).
+2. Download the repository source archive.
+3. Open the folder and double-click `bin/codex-more-agents-fix.command`.
+4. Start with `Safe Preview`.
+5. If the candidate list looks correct, run `Standard Cleanup`.
 
 ## What It Does
 
@@ -44,13 +57,6 @@ This tool only performs reversible thread archiving.
 ## Included Tool
 
 - `bin/codex-more-agents-fix.command`
-
-## Usage
-
-1. Download this repository.
-2. Double-click `bin/codex-more-agents-fix.command`.
-3. Start with `Safe Preview`.
-4. If the candidate list looks correct, move to `Standard Cleanup`.
 
 ## Cleanup Levels
 
