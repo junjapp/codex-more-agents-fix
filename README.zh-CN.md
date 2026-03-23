@@ -5,6 +5,8 @@
 [![Platform: macOS](https://img.shields.io/badge/Platform-macOS-black)](#环境要求)
 [![Language: English + 中文](https://img.shields.io/badge/Docs-English%20%2B%20%E4%B8%AD%E6%96%87-blue)](README.md)
 
+![Codex More Agents Fix social preview](assets/social-preview.svg)
+
 一个面向 macOS 的安全型、仅做归档的工具，用来通过清理 stale subagent 线程，帮助 Codex 再次创建更多 agents。
 
 English version: [README.md](README.md)
@@ -29,6 +31,8 @@ English version: [README.md](README.md)
 3. 解压后双击 `bin/codex-more-agents-fix.command`。
 4. 先运行 `Safe Preview`。
 5. 如果候选结果合理，再执行 `Standard Cleanup`。
+
+更多说明：[使用指南](docs/USAGE.zh-CN.md)
 
 ## 它会做什么
 

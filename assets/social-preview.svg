@@ -1,0 +1,25 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#16324F"/>
+    </linearGradient>
+    <linearGradient id="card" x1="165" y1="118" x2="1115" y2="522" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FAFC" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#DDEBFF" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="88" y="72" width="1104" height="496" rx="28" fill="url(#card)" stroke="#7FB3FF" stroke-opacity="0.22"/>
+  <rect x="126" y="118" width="192" height="44" rx="22" fill="#8FD3FF" fill-opacity="0.14" stroke="#8FD3FF" stroke-opacity="0.45"/>
+  <text x="156" y="147" fill="#D7EDFF" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">macOS Utility</text>
+  <text x="126" y="246" fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="800">Codex More Agents Fix</text>
+  <text x="126" y="312" fill="#C9D8E8" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="500">Help Codex create more agents again.</text>
+  <text x="126" y="358" fill="#C9D8E8" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="500">Safely archive stale subagent threads.</text>
+  <rect x="126" y="418" width="310" height="70" rx="18" fill="#E7F1FF"/>
+  <text x="157" y="462" fill="#0C2340" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="800">Preview first</text>
+  <rect x="456" y="418" width="310" height="70" rx="18" fill="#B9FFD7"/>
+  <text x="487" y="462" fill="#073B27" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="800">Backup before write</text>
+  <rect x="786" y="418" width="310" height="70" rx="18" fill="#FFE4B8"/>
+  <text x="817" y="462" fill="#4C2A00" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="800">Archive only</text>
+</svg>

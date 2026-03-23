@@ -5,6 +5,8 @@
 [![Platform: macOS](https://img.shields.io/badge/Platform-macOS-black)](#requirements)
 [![Language: English + 中文](https://img.shields.io/badge/Docs-English%20%2B%20%E4%B8%AD%E6%96%87-blue)](README.zh-CN.md)
 
+![Codex More Agents Fix social preview](assets/social-preview.svg)
+
 A safe, archive-only macOS utility that helps Codex create more agents again by cleaning up stale subagent threads.
 
 Chinese version: [README.zh-CN.md](README.zh-CN.md)
@@ -29,6 +31,8 @@ This tool is for users who want to:
 3. Open the folder and double-click `bin/codex-more-agents-fix.command`.
 4. Start with `Safe Preview`.
 5. If the candidate list looks correct, run `Standard Cleanup`.
+
+More help: [Usage Guide](docs/USAGE.md)
 
 ## What It Does
 
