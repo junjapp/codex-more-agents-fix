@@ -1,28 +1,39 @@
-# Codex Subagent Cleaner
+# Codex Cluster Unlocker
 
-A safe, archive-only cleanup tool for Codex stale subagent threads on macOS.
+A safe, archive-only macOS utility that helps restore Codex cluster capacity by cleaning up stale subagent threads.
 
 Chinese version: [README.zh-CN.md](README.zh-CN.md)
 
+## The Pain It Solves
+
+Codex can become overly conservative about spawning new subagents when too many stale subagent threads remain active in the local state database.
+
+This tool is designed for users who want to:
+
+- recover practical cluster capacity
+- reduce stale subagent buildup
+- preview cleanup safely before writing anything
+- avoid risky direct deletion of internal Codex rows
+
 ## What It Does
 
-This project provides a double-clickable `.command` tool that helps reduce stale subagent buildup in Codex by:
+This project provides a double-clickable `.command` tool that:
 
-- discovering the active Codex thread state database from `~/.codex`
-- showing read-only audits and dry runs first
-- archiving stale subagent threads instead of deleting internal records
-- blocking write actions while the Codex app is running
-- creating a database backup before every write action
+- discovers the active Codex thread state database from `~/.codex`
+- shows read-only audits and dry runs first
+- archives stale subagent threads instead of deleting internal records
+- blocks write actions while the Codex app is running
+- creates a database backup before every write action
 
 ## Why It Is Archive-Only
 
-Codex uses internal SQLite state that may contain multiple related tables. This project deliberately avoids direct row deletion and database compaction because those operations are not publicly documented as stable or safe for end users.
+Codex uses internal SQLite state with multiple related tables. This project deliberately avoids direct row deletion and database compaction because those operations are not publicly documented as stable or safe for end users.
 
 This tool only performs reversible thread archiving.
 
 ## Safety Model
 
-- Read-only modes are always safe to run.
+- Read-only modes are safe to run anytime.
 - Write modes require the Codex app to be fully closed first.
 - The tool never deletes internal Codex state rows.
 - The tool never runs `VACUUM`.
@@ -30,12 +41,12 @@ This tool only performs reversible thread archiving.
 
 ## Included Tool
 
-- `bin/codex-subagent-cleaner.command`
+- `bin/codex-cluster-unlocker.command`
 
 ## Usage
 
 1. Download this repository.
-2. Double-click `bin/codex-subagent-cleaner.command`.
+2. Double-click `bin/codex-cluster-unlocker.command`.
 3. Start with `Safe Preview`.
 4. If the candidate list looks correct, move to `Standard Cleanup`.
 
@@ -59,7 +70,7 @@ This tool only performs reversible thread archiving.
 
 ## Scope
 
-This repository contains only the standalone cleanup tool and its documentation.
+This repository contains only the standalone cleanup tool and its bilingual documentation.
 It does not include unrelated research files, project-specific configs, or private workspace context.
 
 ## License
