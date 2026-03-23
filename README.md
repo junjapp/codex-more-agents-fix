@@ -1,18 +1,20 @@
-# Codex Cluster Unlocker
+# Codex More Agents Fix
 
-A safe, archive-only macOS utility that helps restore Codex cluster capacity by cleaning up stale subagent threads.
+A safe, archive-only macOS utility that helps Codex create more agents again by cleaning up stale subagent threads.
 
 Chinese version: [README.zh-CN.md](README.zh-CN.md)
 
-## The Pain It Solves
+## The Problem It Fixes
 
-Codex can become overly conservative about spawning new subagents when too many stale subagent threads remain active in the local state database.
+Sometimes Codex starts creating too few agents for bigger tasks.
 
-This tool is designed for users who want to:
+A common reason is stale subagent buildup inside the local Codex state database.
 
-- recover practical cluster capacity
-- reduce stale subagent buildup
-- preview cleanup safely before writing anything
+This tool is for users who want to:
+
+- help Codex create more agents again
+- reduce stale subagent buildup safely
+- preview changes before writing anything
 - avoid risky direct deletion of internal Codex rows
 
 ## What It Does
@@ -41,12 +43,12 @@ This tool only performs reversible thread archiving.
 
 ## Included Tool
 
-- `bin/codex-cluster-unlocker.command`
+- `bin/codex-more-agents-fix.command`
 
 ## Usage
 
 1. Download this repository.
-2. Double-click `bin/codex-cluster-unlocker.command`.
+2. Double-click `bin/codex-more-agents-fix.command`.
 3. Start with `Safe Preview`.
 4. If the candidate list looks correct, move to `Standard Cleanup`.
 
@@ -63,7 +65,7 @@ This tool only performs reversible thread archiving.
 ## Requirements
 
 - macOS
-- Codex desktop app or Codex state directory present at `~/.codex`
+- Codex desktop app or a Codex state directory present at `~/.codex`
 - `zsh`
 - system Python 3
 - `rg` installed and available in `PATH`

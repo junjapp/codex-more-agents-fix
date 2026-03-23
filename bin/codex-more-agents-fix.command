@@ -216,7 +216,7 @@ print_header() {
   if codex_app_running; then
     app_state="Running"
   fi
-  wrap_text 0 "Codex Cluster Unlocker"
+  wrap_text 0 "Codex More Agents Fix"
   wrap_text 0 "Goal: provide conservative, reversible thread archiving without directly deleting internal Codex records."
   rule
   wrap_text 0 "Codex home: $CODEX_HOME"
